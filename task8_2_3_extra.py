@@ -30,7 +30,7 @@ def tracking():
                 b = y + (h // 2)
                 print(a, b)
 
-                fly_resized = cv2.resize(fly_image, (a, a))
+                fly_resized = cv2.resize(fly_image, (a, b))
                 for i in range(b):
                     for j in range(a):
                         if (fly_resized[i, j, 0] < 250) & (fly_resized[i, j, 1] < 250) & (fly_resized[i, j, 2] < 250):
